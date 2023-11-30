@@ -1,0 +1,143 @@
+/* Your board style here */
+
+.track {
+  /* background-color: blueviolet; */
+  width: 100vw;
+}
+
+.lane {
+  width: 100%;
+  background-image: url("images/road_bright.png");
+  background-size: contain;
+  background-position: center;
+  border-style: solid none solid none;
+  border-color: aliceblue;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.car {
+  position: relative;
+  right:13vmin;
+  margin: 1vmin;
+  height: 10vmin;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.car-box {
+  /* background-color: aqua; */
+  width: 0px;
+  z-index: 1;
+}
+
+.progress {
+  visibility: hidden;
+  background-image: url("images/tires.png");
+  background-size: 2vmin 3vmin;
+  background-position-y: center;
+  /* background-repeat: repeat-y; */
+  opacity: 0.5;
+  height:3vmin;
+  /* margin-right: -13vh; */
+  margin-bottom: 1vmin;
+  width:15%;
+  align-self: end;
+}
+
+.finish-line{
+  position: absolute;
+  right: 0px;
+  z-index: 0;
+  /* justify-self: end; */
+  height: 12vmin;
+  /* width: 10vw; */
+  object-fit: contain;
+}
+
+.instructions {
+  text-align: center;
+  background-color: slategrey;
+  padding: 1vh;
+  margin: 1vh;
+  color:aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white;
+  /* height: 20vh; */
+}
+
+.instructions b {
+  font-size: 3vh;
+}
+
+.instructions div {
+  font-size: 2vh;
+}
+
+.play-again {
+  visibility: hidden;
+}
+
+.play-again:hover {
+  background-color: blueviolet;
+}
+
+.win-message {
+  visibility: hidden;
+  position: absolute;
+  right: 25vmin;
+  margin: 1vmin;
+  justify-self: center;
+  align-self: center;
+  /* left: 50%; */
+  /* bottom: 5px; */
+  z-index: 2;
+  background-color: slategrey;
+  box-shadow: 0 0 10px white;
+  color:white;
+  padding: 1vmin;
+  border-style: solid;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 3vmin;
+}
+
+.ns {
+  user-select: none;
+}
+
+.main {
+  width: 100%;
+  margin:auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.environment {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.environment.bottom {
+  background-position: top !important;
+  background-repeat: repeat !important;
+}
+
+.neon {
+  color:white;
+  text-shadow: 0 0 5px magenta;
+}

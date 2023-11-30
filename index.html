@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wagon Race 🏎</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="environment" style="background-image:url('images/city.png');">
+        <h1 class="text-center neon ns">Wagon Race</h1>
+      </div>
+
+      <!-- You race HTML code here -->
+      <div class="track">
+        <div id="p1-lane" class="lane">
+          <div id ="p1-progress" class="progress" player="Player 1"></div>
+          <div class="car-box">
+            <img id="p1-car" src="images/player_1.png" class="car ns">
+          </div>
+          <img src="images/finish.png" class="finish-line ns">
+          <div class="win-message ns">Player 1 Wins!</div>
+        </div>
+        <div id="p2-lane" class="lane">
+          <div id ="p2-progress" class="progress" player="Player 2"></div>
+          <div class="car-box">
+            <img id="p2-car" src="images/player_2.png" class="car ns">
+          </div>
+          <img src="images/finish.png" class="finish-line ns">
+          <div class="win-message ns">Player 2 Wins!</div>
+        </div>
+      </div>
+      <div class="environment bottom" style="background-image:url('images/bottom.png');">
+        <div class="instructions play-again ns">
+          Play Again?
+        </div>
+        <div class="instructions ns">
+          <div>
+            <b>Instructions</b><br>
+            Get to the finish line first!<br>
+            Player 1: Press "1"<br>
+            Player 2: Press "0"<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="module" src="./lib/wagon_race.js"></script>
+  </body>
+</html>
